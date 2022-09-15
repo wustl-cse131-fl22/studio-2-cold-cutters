@@ -33,7 +33,7 @@ public class ruin {
 			/* Check for Ruin or Success */
 			
 			// Next Day
-			//date
+			
 			day++;
 					
 		}
