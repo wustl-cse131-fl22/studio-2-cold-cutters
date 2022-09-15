@@ -44,9 +44,12 @@ public class ruin {
 				}
 				System.out.println("Simulation " + totalSimulations + ": " + amount + " "+ progress);
 				totalSimulations++;
+				
+				/* Check for Ruin or Success */
+				
+				
 			}
 			
-			/* Check for Ruin or Success */
 			
 			// Next Day
 			
