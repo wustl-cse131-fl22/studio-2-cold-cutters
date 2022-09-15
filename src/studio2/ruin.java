@@ -8,7 +8,7 @@ public class ruin {
 		Scanner in = new Scanner(System.in);
 	
 		double winChance;
-		double winLimit;
+		double winLimit = 0;
 		int day;
 		boolean game = true;
 		
@@ -18,7 +18,10 @@ public class ruin {
 		int amount = startAmount;
 		
 		while(game) {
+			System.out.println ("What is your win limit?");
+			winLimit = winLimit/100; 
 			
+					
 		}
 
 	}
