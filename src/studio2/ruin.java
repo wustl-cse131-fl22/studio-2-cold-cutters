@@ -46,6 +46,10 @@ public class ruin {
 				totalSimulations++;
 				
 				/* Check for Ruin or Success */
+				if(amount >= winLimit || amount == ruinLimit) {
+					day++;
+					isDay = false;
+				}
 				
 				
 			}
