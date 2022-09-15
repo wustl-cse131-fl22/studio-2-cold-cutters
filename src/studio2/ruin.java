@@ -33,7 +33,7 @@ public class ruin {
 			System.out.println("What is your ruin limit?");
 			ruinLimit = in.nextDouble() / 100.0;
 			
-			while (isDay) {
+			for (int i = 0; i < 500; i++) {
 				System.out.println(day);
 				boolean isSuccess = (random <= winChance);
 				if (isSuccess) {
@@ -51,6 +51,7 @@ public class ruin {
 					day++;
 					isDay = false;
 				}
+				game = false;
 
 			}
 
