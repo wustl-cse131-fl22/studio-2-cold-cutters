@@ -8,7 +8,6 @@ public class ruin {
 		double startAmount;
 		double winChance;
 		double winLimit;
-		
 
 	}
 
