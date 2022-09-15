@@ -11,9 +11,11 @@ public class ruin {
 		double winLimit;
 		double ruinLimit;
 		int day = 1;
+		boolean isDay = true;
 		boolean game = true;
-		int totalSimulations = 0;
+		int totalSimulations = 1;
 		double random = Math.random();
+		String progress;
 		
 		
 		System.out.println("Enter Starting Amount: ");
@@ -29,6 +31,20 @@ public class ruin {
 			winLimit = in.nextDouble()/100.0; 
 			System.out.println ("What is your ruin limit?");
 			ruinLimit = in.nextDouble()/100.0; 
+			while(isDay) {
+				System.out.println(day);
+				boolean isSuccess = random <= winChance;
+				if(isSuccess) {
+					amount++;
+					progress = "WIN";
+				}
+				else {
+					amount--;
+					progress = "LOSE";
+				}
+				System.out.println("Simulation "+totalSimulations+": "+amount+" "+progress);
+				totalSimulations++;
+			}
 			
 			/* Check for Ruin or Success */
 			
