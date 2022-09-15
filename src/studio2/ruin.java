@@ -33,7 +33,7 @@ public class ruin {
 			ruinLimit = in.nextDouble()/100.0; 
 			while(isDay) {
 				System.out.println(day);
-				boolean isSuccess = random <= winChance;
+				boolean isSuccess = (random <= winChance);
 				if(isSuccess) {
 					amount++;
 					progress = "WIN";
@@ -42,7 +42,7 @@ public class ruin {
 					amount--;
 					progress = "LOSE";
 				}
-				System.out.println("Simulation "+totalSimulations+": "+amount+" "+progress);
+				System.out.println("Simulation " + totalSimulations + ": " + amount + " "+ progress);
 				totalSimulations++;
 			}
 			
